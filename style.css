@@ -197,6 +197,10 @@ article p {
     align-items: center;
     max-width: 80vw;
     justify-content: space-between;
+    overflow: hidden;
+    flex-shrink: 0;
+    padding: 20px 0 20px 40px;
+    margin: -20px 0 -20px -40px;
 }
 
 h3 {
@@ -211,6 +215,8 @@ h3 {
 
 .movies img {
     border-radius: 8px;
+    width: 197px;
+    height: 276px;
 }
 
 .movies > span:hover {
@@ -291,6 +297,15 @@ h3 {
 
     article {
         justify-content: flex-start;
+    }
+
+}
+
+@media screen and (max-width: 1350px) {
+
+    .movies {
+        justify-content: flex-start;
+        gap: 40px;
     }
 
 }
