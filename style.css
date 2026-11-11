@@ -183,3 +183,39 @@ article p {
     height: 6px;
     background-color: rgb(45, 45, 45);
 }
+
+@media screen and (max-width: 500px) {
+
+    nav {
+        flex-direction: column;
+        padding-top: 40px;
+    }
+
+    .user-input input {
+        width: 80vw;
+        height: 13.5vw;
+    }
+    
+    .user-input button {
+        font-size: 18px;
+        width: 45vw;
+        height: 13.5vw;
+    }
+
+}
+
+@media screen and (max-width: 700px) {
+
+    .user-input {
+        flex-direction: column;
+    }
+
+    h1 span {
+        font-size: 35px;
+    }
+
+    article {
+        justify-content: flex-start;
+    }
+
+}
