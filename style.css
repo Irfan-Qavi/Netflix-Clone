@@ -115,7 +115,7 @@ article {
     padding: 25px;
 }
 
-article h1, h4, p {
+article h1, article h4, article p {
     text-align: center;
 }
 
@@ -265,6 +265,37 @@ h3 {
     content: "5";
 }
 
+.more-reasons-to-join {
+    display: flex;
+    flex-direction: column;
+    margin: 60px 10vw;
+    gap: 20px;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(4, 19vw);
+    max-width: 80vw;
+    justify-content: space-between;
+}
+
+.card {
+    padding: 15px;
+    box-sizing: border-box;
+    width: 19vw;
+    height: 200px;
+    background: linear-gradient(149deg, #192247 0%, #210e17 96.86%);
+    border-radius: 16px;
+}
+
+.card h3 {
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: rgba(255, 255, 255, 0.7);
+}
+
 @media screen and (max-width: 500px) {
 
     nav {
@@ -306,6 +337,45 @@ h3 {
     .movies {
         justify-content: flex-start;
         gap: 40px;
+    }
+
+}
+
+@media screen and (max-width: 1150px) {
+    
+    .card-container {
+        grid-template-columns: repeat(2, 39vw);
+        grid-template-rows: repeat(2, 200px);
+        row-gap: 20px;
+    }
+
+    .card {
+        width: 39vw;
+    }
+
+}
+
+@media screen and (max-width: 580px) {
+    
+    .card-container {
+        grid-template-columns: 80vw;
+        grid-template-rows: repeat(4, 200px);
+    }
+
+    .card {
+        width: 80vw;
+    }
+
+}
+
+@media screen and (max-width: 300px) {
+    
+    .card {
+        height: auto;
+    }
+
+    .card-container {
+        grid-template-rows: repeat(4, auto);
     }
 
 }
