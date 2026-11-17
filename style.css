@@ -520,3 +520,20 @@ footer .questions {
     }
 
 }
+
+.disclaimer {
+  background-color: #181818;
+  color: #e5e5e5;
+  border-bottom: 2px solid #e50914;
+  text-align: center;
+  padding: 10px 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.85rem;
+  line-height: 1.4;
+  position: relative;
+  z-index: 1000;
+}
+
+.disclaimer strong {
+  color: #ff4d4d;
+}
